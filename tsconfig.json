@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/all-anime/page.jsx", "src/app/all-anime/[mal_id]/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/all-anime/page.jsx", "src/app/all-anime/[mal_id]/page.jsx", "tailwind.config.ts", "src/app/all-anime/AnimeList.jsx", "src/app/layout.jsx", "src/app/page.jsx"],
   "exclude": ["node_modules"]
 }
