@@ -3,7 +3,6 @@
 import NextPage from './../components/PaginationButtons';
 import { useState, useEffect } from 'react';
 // import { Link } from 'next/link';
-import Image from 'next/image';
 
 
 export default function AnimeList() {
@@ -46,7 +45,7 @@ export default function AnimeList() {
                 {anime.data.map(a => (
                     <a href={`/all-anime/${a.mal_id}`}>
                         <div key={a.mal_id} className="image-container mb-4 hover:scale-105">
-                                <Image src={a.images.webp.image_url} alt="" />
+                                <img src={a.images.webp.image_url} alt="" />
                         </div>
                     </a>
                 ))}
