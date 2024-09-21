@@ -21,7 +21,6 @@ export default function AnimeList() {
             setLoading(false)
         }
     }
-
     fetchAnimes()
   },[current_page])
   
