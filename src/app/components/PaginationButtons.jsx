@@ -20,7 +20,7 @@ export default function NextPage({
 
                 <button
                   className="join-item btn"
-                  onClick={() => set_current_page(current_page++)}
+                  onClick={() => set_current_page(current_page + 1)}
                 >
                   Next Page <i class="fa-solid fa-chevron-right text-white"></i>
                 </button>

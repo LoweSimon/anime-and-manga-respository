@@ -2,6 +2,7 @@
 
 import NextPage from './../components/PaginationButtons';
 import { useState, useEffect } from 'react';
+import SearchAnime from '../components/SearchAnime';
 // import { Link } from 'next/link';
 
 
@@ -23,6 +24,7 @@ export default function AnimeList() {
     }
     fetchAnimes()
   },[current_page])
+
   
   if (isLoading) return <p>Loading Anime...</p>
 
