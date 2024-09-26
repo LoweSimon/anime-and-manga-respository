@@ -1,17 +1,29 @@
+$background: #171717;
+$font-color: #e6e6e6;
+$tile-color: #444444;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header-title {
-    font-size: 3rem;
-    color: gray;
-    text-transform: uppercase;
+body {
+    background-color: $background;
+    color: $font-color;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-    span {
-        color: #000
-    }
+h3 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: calc(100vw - 400px);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar {
@@ -19,6 +31,86 @@
         li {
             color: #fff
         }
+    }
+}
+
+.header-title {
+    font-size: 3rem;
+    color: $font-color;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    span {
+        color: #9B1500;
+    }
+}
+
+aside {
+    max-width: 20rem;
+    background: transparent;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: $font-color;
+    border-radius: 0 2rem 2rem 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    div {
+        width: 15rem;
+    }
+
+    p {
+        background: $tile-color;
+        margin-bottom: 1rem;
+        border-radius: 2rem;
+        height: 3rem;
+        color: $font-color;
+        display: flex;
+        justify-content: center;
+        line-height: 3rem;
+    }
+}
+
+.anime-zone {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.zone-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.zones {
+    width: 20rem;
+    height: 30rem;
+    border: 1px solid $font-color;
+
+    img {
+        height: 100%;
+    }
+
+    img:hover {
+        opacity: 0.5;
+    }
+
+    img:hover span {
+        visibility: visible;
+    }
+
+    span {
+        visibility: hidden;
     }
 }
 
@@ -41,5 +133,28 @@
             width: 200px;
             height: 2rem;
         }
+    }
+}
+
+.anime-image {
+    max-height: 20rem;
+    height: 100%;
+}
+
+.anime-card-content {
+    width: 15rem;
+    height: 25rem;
+}
+
+.anime-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }

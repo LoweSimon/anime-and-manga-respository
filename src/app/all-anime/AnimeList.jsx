@@ -2,7 +2,7 @@
 
 import NextPage from './../components/PaginationButtons';
 import { useState, useEffect } from 'react';
-import SearchAnime from '../components/SearchAnime';
+// import SearchAnime from '../components/SearchAnime';
 // import { Link } from 'next/link';
 
 
