@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function AnimeCard({ anime }: any) {
+export default function AnimeCard({ anime }: any) /* eslint-disable @typescript-eslint/no-explicit-any */ {
 
     return (
         <article className="anime-card">

@@ -1,4 +1,4 @@
-import AnimeCard from './AnimeCard';
+// import AnimeCard from './AnimeCard';
 
 export default function MainContent(props: any) {
 

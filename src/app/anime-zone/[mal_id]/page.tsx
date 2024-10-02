@@ -4,7 +4,7 @@ async function getAnime(mal_id: number) {
     return res.json()
 }
 
-export default async function AnimeDetails({ params }: any) {
+export default async function AnimeDetails({ params }: any) /* eslint-disable @typescript-eslint/no-explicit-any */ {
 
     const anime = await getAnime(params.mal_id)
     
