@@ -4,7 +4,7 @@ export default function NextPage({
   current_page,
   total_pages,
   set_current_page,
-}) {    
+}: any) {    
 
     return (
         <>
@@ -20,9 +20,9 @@ export default function NextPage({
 
                 <button
                   className="join-item btn"
-                  onClick={() => set_current_page(current_page++)}
+                  onClick={() => set_current_page(current_page + 1)}
                 >
-                  Next Page <i class="fa-solid fa-chevron-right text-white"></i>
+                  Next Page <i className="fa-solid fa-chevron-right text-white"></i>
                 </button>
             </div>
         </>

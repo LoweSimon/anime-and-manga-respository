@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/all-anime/page.jsx", "src/app/all-anime/[mal_id]/page.jsx", "tailwind.config.ts", "src/app/all-anime/AnimeList.jsx", "src/app/layout.jsx", "src/app/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/all-anime/page.tsx", "src/app/all-anime/[mal_id]/page.tsx", "tailwind.config.ts", "src/app/all-anime/AnimeList.tsx", "src/app/layout.jsx", "src/app/page.jsx", "src/app/components/Sidebar.tsx", "src/app/components/PaginationButtons.tsx", "src/app/components/NavBar.tsx", "src/app/components/Header.tsx", "src/app/components/AnimeCard.tsx", "src/app/anime-zone/[mal_id]/page.tsx", "src/app/components/MainContent.tsx"],
   "exclude": ["node_modules"]
 }
