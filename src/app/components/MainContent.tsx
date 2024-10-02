@@ -1,6 +1,6 @@
 import AnimeCard from './AnimeCard';
 
-export default function MainContent(props) {
+export default function MainContent(props: any) {
 
     return (
         <>
@@ -21,12 +21,12 @@ export default function MainContent(props) {
             </div>
 
             <div>
-                {props.allAnime.map(anime => (
+                {/* {props.allAnime.data.map(anime => (
                     <AnimeCard 
                         anime={anime}
                         key={anime.mal_id}
                     />
-                ))}
+                ))} */}
             </div>
         </>
     )

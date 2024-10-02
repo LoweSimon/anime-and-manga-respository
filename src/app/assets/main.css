@@ -8,6 +8,7 @@ body {
   background-color: #171717;
   color: #e6e6e6;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100vh;
 }
 
 h3 {
@@ -35,7 +36,8 @@ h3 {
   gap: 2rem;
   margin-bottom: 2rem;
 }
-.header-title span {
+
+.highlight-text {
   color: #9B1500;
 }
 
@@ -78,12 +80,15 @@ aside p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  transform: translate(0%, 10%);
 }
 
 .zones {
   width: 20rem;
   height: 30rem;
   border: 1px solid #e6e6e6;
+  position: relative;
+  text-align: center;
 }
 .zones img {
   height: 100%;
@@ -91,11 +96,26 @@ aside p {
 .zones img:hover {
   opacity: 0.5;
 }
-.zones img:hover span {
-  visibility: visible;
-}
 .zones span {
-  visibility: hidden;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-transform: uppercase;
+  animation: all 2s ease-in;
+}
+.zones img:hover + span {
+  display: block;
+  transition: all;
+}
+
+.zone-container p {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  gap: 1rem;
 }
 
 .top-anime {

@@ -10,7 +10,6 @@ export default function ShowAnime() {
             <p></p>
             <div className="flex flex-row flex-wrap justify-between gap-10 container mx-auto">
                 
-                {/* @ts-expect-error Server Component */}
                 <AnimeList />
             </div>
         </div>

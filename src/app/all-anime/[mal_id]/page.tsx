@@ -22,7 +22,7 @@ export default async function AnimeDetails({ params }) {
                 </tbody>
             </table>
             <p>{anime.data.synopsis}</p>
-            <iframe src={anime.data.trailer.embed_url} frameborder="0"></iframe>
+            <iframe src={anime.data.trailer.embed_url}></iframe>
         </div>
     )
 }

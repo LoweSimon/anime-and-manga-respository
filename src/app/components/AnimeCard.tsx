@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function AnimeCard({ anime }) {
+export default function AnimeCard({ anime }: any) {
 
     return (
         <article className="anime-card">

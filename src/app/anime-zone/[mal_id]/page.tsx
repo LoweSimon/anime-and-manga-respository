@@ -1,10 +1,10 @@
-async function getAnime(mal_id) {
+async function getAnime(mal_id: number) {
     const res = await fetch(`https://api.jikan.moe/v4/anime/${mal_id}`)
 
     return res.json()
 }
 
-export default async function AnimeDetails({ params }) {
+export default async function AnimeDetails({ params }: any) {
 
     const anime = await getAnime(params.mal_id)
     
@@ -22,7 +22,7 @@ export default async function AnimeDetails({ params }) {
                 </tbody>
             </table>
             <p>{anime.data.synopsis}</p>
-            <iframe src={anime.data.trailer.embed_url} frameborder="0"></iframe>
+            <iframe src={anime.data.trailer.embed_url}></iframe>
         </div>
     )
 }

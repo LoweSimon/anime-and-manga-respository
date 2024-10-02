@@ -1,6 +1,6 @@
 "use client"
 
-import NextPage from './../components/PaginationButtons';
+import NextPage from '../components/PaginationButtons';
 import { useState, useEffect } from 'react';
 // import SearchAnime from '../components/SearchAnime';
 // import { Link } from 'next/link';

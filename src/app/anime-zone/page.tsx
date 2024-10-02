@@ -4,14 +4,14 @@ import { useState, useEffect } from 'react';
 
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
-import MainContent from './../components/MainContent';
+import MainContent from '../components/MainContent';
 
 
 export default function Home() {
 
   const [topAnime, setTopAnime] = useState([])
   const [allAnime, setAllAnime] = useState([])
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   const [isLoading, setLoading] = useState(true)
 
 
@@ -25,16 +25,16 @@ export default function Home() {
         }
       }
 
-    const handleSearch = e => {
+    const handleSearch = (e: { preventDefault: (arg0: Promise<void>) => void; }) => {
       e.preventDefault(
 
-        getAllAnime(search)
+        getAllAnime()
       )
     }
 
   
     const getAllAnime = async () => {
-        const tempData = await fetch(`https://api.jikan.moe/v4/anime`)
+        const tempData = await fetch(`https://api.jikan.moe/v4/anime?q=${search}`)
         const allData = await tempData.json()
         setAllAnime(allData)
     }
@@ -54,8 +54,6 @@ export default function Home() {
         <Sidebar 
           topAnime={topAnime}
         />
-
-        {console.log(allAnime)}
 
         <MainContent 
           handleSearch={handleSearch}

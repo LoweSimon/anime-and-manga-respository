@@ -1,15 +1,16 @@
 import Link from "next/link"
 
+
 export default function Sidebar({
     topAnime
-}) {
+}: any) {
     return (
         <>
             <aside>
                 <h3>Top Anime</h3>
 
                 <div className="side-top-anime">
-                    {topAnime.data.slice(0, 5).map(top => (
+                    {topAnime.data.slice(0, 5).map((top: { mal_id: number; title_english: string }) => (
                         <Link href={`/anime-zone/${top.mal_id}`} key={top.mal_id}>
                             <p>{top.title_english}</p>
                         </Link>

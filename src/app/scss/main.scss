@@ -12,6 +12,7 @@ body {
     background-color: $background;
     color: $font-color;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
 }
 
 h3 {
@@ -29,7 +30,7 @@ h3 {
 .navbar {
     ul {
         li {
-            color: #fff
+            color: #fff;
         }
     }
 }
@@ -42,10 +43,10 @@ h3 {
     justify-content: center;
     gap: 2rem;
     margin-bottom: 2rem;
+}
 
-    span {
-        color: #9B1500;
-    }
+.highlight-text {
+    color: #9B1500;
 }
 
 aside {
@@ -90,27 +91,47 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    transform: translate(0%, 10%);
 }
 
 .zones {
     width: 20rem;
     height: 30rem;
     border: 1px solid $font-color;
+    position: relative;
+    text-align: center;
 
     img {
         height: 100%;
-    }
 
-    img:hover {
-        opacity: 0.5;
-    }
-
-    img:hover span {
-        visibility: visible;
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     span {
-        visibility: hidden;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        text-transform: uppercase;
+        animation: all 2s ease-in;
+    }
+
+    img:hover + span {
+        display: block;
+        transition: all;
+    }
+}
+
+.zone-container {
+    p {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        gap: 1rem;
     }
 }
 
